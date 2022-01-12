@@ -9,7 +9,7 @@ for page in range(1):
     
     data = 'https://www.metacritic.com/browse/games/score/metascore/all/all/filtered?page='+str(page)
 
-    user_agent = {'User-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62'}
+    user_agent = {'User-agent': 'Mozilla/5.0'}
     response = requests.get(data, headers = user_agent)
     soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -84,7 +84,7 @@ for page in range(1):
       
       # Connecting to personal Microsoft SQL Server Management Studio and saving data to pre created DB
     DRIVER = 'SQL Server'
-    SERVER_NAME = 'DESKTOP-RJHR8U1\SQLEXPRESS'
+    SERVER_NAME = 'DESKTOP-****\****'  # update with users sever name
     DATABASE_NAME = 'GameData'
 
     conn_string = f"""
@@ -109,9 +109,8 @@ for page in range(1):
     """
 
     try:
-        for record in allGameData:
-            print(record)
-            cursor.execute(insert_statement, record)        
+        for game in allGameData:
+            cursor.execute(insert_statement, game)        
     except Exception as e:
         cursor.rollback()
         print(e.value)
