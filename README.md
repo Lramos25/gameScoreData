@@ -4,8 +4,9 @@ A fun data analysis project to detirmine best video games of all time based on c
 
 This project uses Python for scrapping the data (imports - NumPy / requests / BeautifulSoup4 / sqlite), MySQL for data storage and manipulation. *Added file that connects to MySQL
 
+Created db table containing sales data (*importat data from CSV downloaded from kaggle user Arslan Ali)
+
 Tasks left to complete
-- Create db table containing sales data (*CSV downloaded from kaggle user Arslan Ali)
 
 - Clean and validate stored data
 
