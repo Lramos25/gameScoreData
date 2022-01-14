@@ -8,7 +8,7 @@ Created db table containing sales data (*importat data from CSV downloaded from 
 
 Tasks left to complete
 
-- Clean and validate stored data
+- Clean and validate stored data (duplicates, look at game packs in sales data, verify global sales will "NULL" any with 0 slaes in a region, cross referene game name spellings match between the two data tables)
 
 - Analyse and Transform data
 
