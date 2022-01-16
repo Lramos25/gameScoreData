@@ -32,7 +32,7 @@ Scrap Data  from (https://www.metacritic.com/browse/games/score/metascore/all/al
 	
   This updated the total sales data for every instance of a game without regard to the platform. The current output still has duplicate records for the same games on different platforms but the total sales data is updated for each one. Now I can remove duplicates without the need to ensure the correct record remains. 
 
-((***INSERT PIC HERE***))
+![First SQL](https://user-images.githubusercontent.com/10605443/149674645-78001e3b-b9b9-436c-9225-2f3ec94e4217.JPG)
 
   Before moving on with deleting duplicates I like to create a backup of the cleaned data. This will allow me to come back later if I find any discrepancies or allow me to restore the data if I make a mistake. I also run tests on a small “test” table in a separate db as a redundant precaution.  Because this is my db and the data set is just under 17k, I don’t think there are any draw backs to the extra care – and it just provides more chances for me to practice. 
 
