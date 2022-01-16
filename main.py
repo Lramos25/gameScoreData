@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import pandas as pd
+import pandas as pd #used duing the intial building to help see output, no longer needed so feel free to remove it.
 import sys
 import pyodbc as odbc
 
