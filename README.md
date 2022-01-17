@@ -76,7 +76,7 @@ Scrap Data  from (https://www.metacritic.com/browse/games/score/metascore/all/al
   After deleting duplicates, I dropped the various regional sales data. I had this data for verification purposes. This data is not important to me for this project.
 The final part for cleaning this data is to make sure all game collection sets are marked accordingly. Game collection sets have several older games in one package and I don’t want these to count for any particular game title or genre. I want to keep these as their own so we can look at how these do comparatively. 
 
-  A quick glance shows me the gameData table has 18k rows compared to the 11K rows in game sales. It is obvious I need to go through the gameData table to clean this up as well. 
-Once this is done I need to join the two tables but I need to make sure any titles on one but not the other has a default value. After removing duplicates an doing some minor cleaning on game titles there is a difference of 160 records between the two tabels. 
+  I need to go through the gameData table to clean this up as well. 
+Once this is done I need to join the two tables but I need to make sure any titles on one but not the other has a default value. After removing duplicates an doing some minor cleaning on game titles there is a difference of 160 records between the two tabels. This is a more manageable number.
 
-  I have just over 1150 games without sales data. I cant conintue without at least trying to get this data to use considering 115 of these are top games. I have put everything else on hold and will work to get the data for the games with a critic score 90 or better. Once I have done that I will look to see what I need to do to get the rest of the data or if I need to make adjustments to account for these games.
+
